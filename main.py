@@ -6,3 +6,5 @@ class Person:
         self.location = location # ak nastavim private dediaci objekt nemoze pouzit tuto hodnotu / pri student funkcii vyhodi chybu
         self.job = job
         self.oci_farba = farba_oci
+def pozdrav(self):
+        print(f"Ahoj volam sa {self.name} a mam {self.age} rokov")
