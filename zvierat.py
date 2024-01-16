@@ -1,41 +1,48 @@
 class Zvierat:
     def hlas(self):
-        raise  NotImplementedError("Potrieda musi inplementovat tuto metodu")
+        pass
+
     def pocet(self):
-        raise  NotImplementedError("Potrieda musi inplementovat tuto metodu")
+        raise NotImplementedError("Potrieda musi inplementovat tuto metodu")
 
 
 class Pes(Zvierat):
     def hlas(self):
-    def pocet(self):
         return "haf"
-        return "4"
 
-class kohut(Zvierat):
-    def hlas(self):
     def pocet(self):
+        return 4
+
+
+class Kohut(Zvierat):
+    def hlas(self):
         return "kotkodak"
-        return "2"
+
+    def pocet(self):
+        return 2
+
 
 class Macka(Zvierat):
-    def hlas2(self):
-    def pocet(self):
+    def hlas(self):
         return "Mnau"
-        return "4"
+
+    def pocet(self):
+        return 4
+
 
 def vydaj_zvuk(zviera):
-    return  zviera.hlas()
+    return zviera.hlas()
 
-def pocet_nohy(pocet_nohy):
-    return pocet_nohy.pocet()
+
+def pocet_nohy(zviera):
+    return zviera.pocet()
+
 
 pes = Pes()
 macka = Macka()
-kohut = kohut()
+kohut = Kohut()
 
 for zviera in [pes, macka, kohut]:
     print(vydaj_zvuk(zviera))
-    print(zviera.hlas())
+    print(zviera.pocet())
     zviera.hlas()
-
-
