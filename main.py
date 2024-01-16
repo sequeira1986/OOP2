@@ -1,10 +1,10 @@
-class Person:
-    def __init__(self, name, age, gender, location, job, farba_oci):
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.location = location # ak nastavim private dediaci objekt nemoze pouzit tuto hodnotu / pri student funkcii vyhodi chybu
-        self.job = job
-        self.oci_farba = farba_oci
-def pozdrav(self):
-        print(f"Ahoj volam sa {self.name} a mam {self.age} rokov")
+class MojaKalkulacka:
+    @staticmethod
+    def sucet(a, b):
+        return a+b
+    @staticmethod
+    def sucin(a,b):
+        return a*b
+print(MojaKalkulacka.sucet(8,10))
+print(MojaKalkulacka.sucin(5,2))
+
